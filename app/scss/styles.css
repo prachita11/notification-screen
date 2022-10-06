@@ -1,0 +1,141 @@
+.html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+:root {
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-vlgb: hsl(210, 60%, 98%);
+  --neutral-lgb-500:hsl(211, 68%, 94%);
+  --neutral-lgb-800:hsl(210, 60%, 98%);
+  --neutral-gb:hsl(219, 14%, 63%);
+  --neutral-dgb:hsl(219, 12%, 42%);
+  --neutral-vdb:hsl(224, 21%, 14%);
+}
+
+.color-gray {
+  color: var(--neutral-gb);
+}
+
+.color-dark-gray {
+  color: var(--neutral-dgb);
+}
+
+.color-black {
+  color: var(--neutral-vdb);
+}
+
+.color-blue {
+  color: var(--primary-blue);
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.container___body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+h2::after {
+  content: "3";
+  background-color: var(--primary-blue);
+  color: var(--neutral-white);
+  padding: 0.1em 0.5em;
+  position: absolute;
+  margin: 0 0.5em;
+  border-radius: 10px;
+  bottom: 20px;
+}
+
+.read h2::after {
+  content: "0";
+  background-color: var(--primary-blue);
+  color: var(--neutral-white);
+  padding: 0.1em 0.5em;
+  position: absolute;
+  margin: 0 0.5em;
+  border-radius: 10px;
+  bottom: 20px;
+}
+
+.notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em 0 1em 0;
+  margin: 1em 0;
+}
+
+.unread {
+  background-color: var(--neutral-lgb-800);
+  border-radius: 10px;
+}
+.unread .notification__text::after {
+  content: "";
+  background-color: var(--primary-red);
+  border-radius: 25px;
+  margin: 0 0 0 0.5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 65px;
+  display: inline-flex;
+}
+
+.notification_text {
+  padding-right: 1em;
+}
+
+.notification__date {
+  margin: 0.25em 0 0 0;
+}
+
+.notification__img {
+  align-self: flex-start;
+  padding: 0 1em;
+}
+
+.picture {
+  padding: 0 1em;
+  margin-bottom: 1em;
+}
+
+.message {
+  margin: 1em 1em 1em 0;
+  padding: 1em;
+  border: 1px solid var(--neutral-lgb-500);
+  color: var(--neutral-dgb);
+  border-radius: 5px;
+}
+
+.notif__description::after, .notif__description::before {
+  content: "";
+  padding-right: 0.25em;
+}/*# sourceMappingURL=styles.css.map */

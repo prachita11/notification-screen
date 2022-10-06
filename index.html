@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app/scss/styles.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="notification" class="container___body">
+      <h2>Notifications</h2>
+      <p class="color-dark-gray" onclick="markAsRead()">Mark all as read</p>
+    </div>
+    <div class="container___body_2">
+
+      <div class="notification unread">
+        <div class="notification__img">
+          <img src="assets/images/avatar-mark-webber.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Mark Webber</span> <span
+              class="notif__description"> reacted to your recent post </span><span class="fw-800">My first tournament
+              today!</span>
+          </div>
+          <div class="color-gray notification__date">1m ago
+          </div>
+        </div>
+      </div>
+
+      <div class="notification unread">
+        <div class="notification__img">
+          <img src="assets/images/avatar-angela-gray.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Angela Gray</span> <span
+              class="notif__description"> followed you </span>
+          </div>
+          <div class="color-gray notification__date">5m ago
+          </div>
+        </div>
+      </div>
+
+      <div class="notification unread">
+        <div class="notification__img">
+          <img src="assets/images/avatar-jacob-thompson.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Jacob Thompson</span> <span
+              class="notif__description">has joined your group</span> <span class="fw-800 color-blue">Chess Club</span>
+          </div>
+          <div class="color-gray notification__date">5m ago
+          </div>
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification__img">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Rizky Hasanuddin</span> <span
+              class="notif__description">sent you a private message</span>
+          </div>
+          <div class="color-gray notification__date">5 days ago
+          </div>
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+      </div>
+
+      <div class="notification ">
+        <div class="notification__img">
+          <img src="assets/images/avatar-kimberly-smith.webp" width="50">
+        </div>
+        <div>
+
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Kimberly Smith</span> <span
+              class="notif__description">commented on your picture</span>
+          </div>
+          <div class="color-gray notification__date">1 week ago
+          </div>
+        </div>
+        <div class="picture">
+          <img src="assets/images/image-chess.webp" width="50">
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification__img">
+          <img src="assets/images/avatar-nathan-peterson.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Nathan Peterson</span> <span
+              class="notif__description"> reacted to your recent post </span><span class="fw-800">5 end-game strategies
+              to increase your win rate
+              2 weeks ago</span>
+          </div>
+          <div class="color-gray notification__date">2 weeks ago
+          </div>
+        </div>
+      </div>
+
+      <div class="notification">
+        <div class="notification__img">
+          <img src="assets/images/avatar-anna-kim.webp" width="50">
+        </div>
+        <div>
+          <div class="notification__text color-dark-gray"><span class="fw-800 color-black">Anna Kim</span> <span
+              class="notif__description">left the group</span> <span class="fw-800 color-blue">Chess Club</span>
+          </div>
+          <div class="color-gray notification__date">2 weeks ago
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">PN</a>.
+  </div>
+  <script src="app/js/app.js"></script>
+</body>
+
+</html>

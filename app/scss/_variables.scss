@@ -1,0 +1,31 @@
+
+:root {
+    --primary-red: hsl(1, 90%, 64%);
+    --primary-blue: hsl(219, 85%, 26%);
+    --neutral-white: hsl(0, 0%, 100%); 
+    --neutral-vlgb: hsl(210, 60%, 98%); 
+    --neutral-lgb-500:hsl(211, 68%, 94%); 
+    --neutral-lgb-800:hsl(210, 60%, 98%); 
+    --neutral-gb:hsl(219, 14%, 63%); 
+    --neutral-dgb:hsl(219, 12%, 42%);
+    --neutral-vdb:hsl(224, 21%, 14%);
+}
+
+.color-gray{
+    color:var(--neutral-gb);
+}
+.color-dark-gray{
+    color:var(--neutral-dgb);
+}
+
+.color-black{
+    color:var(--neutral-vdb);
+}
+
+.color-blue {
+    color: var(--primary-blue);
+}
+
+.fw-800{
+    font-weight: 800;
+}
