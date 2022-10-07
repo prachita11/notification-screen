@@ -110,11 +110,6 @@ h2::after {
   align-items: center;
   padding: 1em 0 1em 0;
   margin: 1em 0;
-  cursor: pointer;
-}
-
-.notification:hover {
-  background-color: var(--neutral-vlgb);
 }
 
 .unread {
@@ -134,6 +129,20 @@ h2::after {
 
 .notification_text {
   padding-right: 1em;
+}
+
+.toggle__read {
+  color: var(--neutral-dgb);
+}
+
+.notification__name {
+  font-weight: 800;
+  color: var(--neutral-vdb);
+}
+
+.hover:hover {
+  color: var(--primary-blue);
+  cursor: pointer;
 }
 
 .notification__date {
@@ -156,6 +165,10 @@ h2::after {
   border: 1px solid var(--neutral-lgb-500);
   color: var(--neutral-dgb);
   border-radius: 5px;
+}
+.message:hover {
+  background-color: var(--neutral-lgb-500);
+  cursor: pointer;
 }
 
 .notif__description::after,
