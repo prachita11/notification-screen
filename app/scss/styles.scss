@@ -56,7 +56,12 @@ h2::after {
     align-items: center;
     padding: 1em 0 1em 0;
     margin: 1em 0;
+    cursor: pointer;
 
+}
+
+.notification:hover{
+    background-color: var(--neutral-vlgb);
 }
 
 .unread {
